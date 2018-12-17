@@ -1,0 +1,189 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lilita+One);
+
+* {
+  user-select: none;
+}
+
+canvas {
+  padding: 0 !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+
+#oppai-container {
+  margin: 0 auto !important;
+  text-align: center !important;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 56px;
+  padding-top: 20px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.option-container {
+  margin-top: 20px;
+}
+
+#oppai-canvas {
+  background-color: black;
+  text-align: center !important;
+  margin: 0 auto !important;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  /* canvasでスクロールできちゃうため */
+  overflow: hidden;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-color: #454c50;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+nav {
+  background-color: #454c50;
+  letter-spacing: 0.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 15;
+}
+
+.container {
+  margin-bottom: 20px;
+  padding-top: 56px;
+}
+
+.last-range {
+  margin-bottom: 0px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: #6e777c;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #6e777c;
+}
+
+.snsBtn,
+.snsBtn i {
+  font-size: 20px;
+}
+
+.snsBtn {
+  font-weight: bold;
+}
+
+.hatena {
+  background-color: #008fde;
+}
+
+.hatena:hover {
+  background-color: #008fde;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.twitter:hover {
+  background-color: #55acee;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.opfgBtn,
+.opfgBtn:active,
+.opfgBtn:focus {
+  background-color: #ffa726;
+}
+
+.opfgBtn:hover {
+  background-color: #ffb74d;
+}
+
+.dlBtn-wrapper {
+  margin-top: 30px;
+}
+
+.dlBtn-wrapper > .btn-large + .btn-large {
+  margin-left: 16px;
+}
+
+.mjx-chtml[tabindex]:focus,
+body :focus .mjx-chtml[tabindex] {
+  display: inline-table;
+  outline: none !important;
+}
+
+#opf {
+  /* margin-top: 10px; */
+  overflow-x: auto;
+}
+
+.resetBtn {
+  margin: 0 auto;
+  /* margin-top: 20px; */
+}
+
+#opfMathDLBtn {
+  display: none;
+}
+
+/* UX：反比例のため */
+#ckb_h {
+  direction: rtl;
+}
+
+.DLmsg_sp {
+  margin-top: 10px;
+  color: #c8c8c8;
+  line-height: 2rem;
+}
+
+/* PC・タブレットのみ */
+@media screen and (min-width: 1200px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/* スマホ・タブレット対応 */
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
+}
+
+/* スマホ対応 */
+@media screen and (min-width: 600px) {
+  .DLmsg_sp {
+    display: none;
+  }
+}
